@@ -10,24 +10,34 @@
 <body>
     <header>
         <nav>
-            <a href="/html/">Home</a> |
-            <a href="/css/">Tech Stack</a> |
-            <a href="/js/">Contact</a> |
+            <a href="#home">Home</a> |
+            <a href="#tech">Tech Stack</a> |
+            <a href="#sports">Favorite sports</a> |
+            <a href="#contact">Contact</a> |
         </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Hi, I am LEE CHI</h1>
-            <figure>
-                <img src=Rich.jpg alt=“rich” class="photo">
-            </figure>
-            <h2>full stack dev</h2>
-            
-            <em>Espoo, Finland</em>
-            <p>I am now a trainee in Integrify</p>
-        </section>
-        <section>
-            <h2>Place I have been</h2>
+        <h1 id="home">Hi, I am LEE CHI</h1>
+        <figure>
+            <img src=Rich.jpg alt=“rich” class="photo">
+        </figure>
+        <audio controls autoplay>
+            <source src="" type="audio/mp4">
+            "your browser does not support the audio element"
+        </audio>
+        <div>
+            <i>full stack dev</i>
+            <br>
+            <a href="mailto:chi.lee@integrify.io">
+                chi.lee@integrify.io
+            </a>
+            <br>
+            <a href="tel:+3580469018278">
+                +3580469018278
+            </a>
+            <br>
+            <i>Espoo, Finland</i>
+        </div>
+        <p>I am now a trainee in Integrify.</p>
+        <h2>Place I have been</h2>
             <table>
                 <tr>
                     <th>City</th>
@@ -45,8 +55,11 @@
                     <td>1 year</td>
                 </tr>
             </table>
-        </section>
-        <section>
+    </header>
+    <hr>
+    <main>
+        
+        <section id="tech">
             <h2>Tech stack</h2>
             <p>1. Frontend</p>
             <ul>
@@ -58,20 +71,55 @@
             <p>2. Backend</p>
             <ul>
                 <li>NodeJS</li>
-                <li>#C</li>
+                <li>C#</li>
             </ul>
         </section>
-        
+        <hr>
+        <section id="sports">
+            <h2>Favorite Sports</h2>
+            <ul>
+                <li>surfing</li>
+                <li>basketball</li>
+                <li>biking</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="contact">
+            <h2>Let's connect</h2>
+            <form method="get">
+                <div>
+                    <label for="name">Your full name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Jon Doe"><br>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Jon@gmail.com"><br><br>
+                </div>
+                <div>
+                    <label for="nationality">Nationality:</label><br>
+                    <select name="nationality" id="nationality">
+                        <option value="Taiwan">Taiwan</option>
+                        <option value="Finland">Finland</option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <label for="picture">Your profile picture</label><br>
+                    <input type="file" name="picture" id="picture">
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="content">Your Message:</label><br>
+                    <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                </div>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <hr>
     </main>
     <footer>
-        <h2>Let's connect</h2>
-        <form action="/action_page.php" method="get">
-            <label for="fname">Your name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">E-mail</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+        Lee Chi, all right reserved 2023
     </footer>
 </body>
 </html>
