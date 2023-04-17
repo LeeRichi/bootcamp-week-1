@@ -6,13 +6,13 @@
 
 
 ## Result
-My deployment URL: 
+My deployment URL: https://bc-project1.netlify.app/
 
 
 ## Sturcture
 ````
 ├── README.md
-├──homepage.html
+├──index.html
 ├──mystyle.css
 └──Rich.jpg
 ````
