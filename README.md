@@ -16,3 +16,6 @@ Styling is not needed for this assignment
 ## Result
 Please add also link to your deployment
 ![README example](readme-example.png)
+
+
+README file not done yet. Will be done during the evening.
